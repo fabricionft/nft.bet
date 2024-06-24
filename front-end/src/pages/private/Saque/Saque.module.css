@@ -1,0 +1,65 @@
+.saque{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--elementos);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.margemSaque{
+  width: 87.5%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.tituloSaque{
+  margin: 0 0 20px 0;
+  font-size: 25px;
+}
+
+.linhaContas{
+  width: 100%;
+  display: flex;
+}
+
+.btnAdcionarChave{
+  padding: 0 15px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--botoes);
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13.5px;
+}
+
+.btnAdcionarChave:hover{
+  background-color: var(--botoes-hover);
+}
+
+.linhaContas, .inputValorSaque, .btnConcluirSaque{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btnConcluirSaque{margin-top: 40px;}
+
+
+.selectValorSaque, .inputValorSaque{
+  width: calc(100% - 12px);
+  background-color: #4e5b74;
+}
+
+@media screen and (max-width: 1250px) {
+  .saque{width: 80%;}
+}
+
+
+@media screen and (max-width: 800px) {
+  .saque{width: 100%;}
+}

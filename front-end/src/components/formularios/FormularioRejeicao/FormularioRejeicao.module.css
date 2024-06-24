@@ -1,0 +1,43 @@
+.containerFormulario{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.formularioRejeicao{
+  position: relative;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--elementos);
+  border-radius: 7.5px;
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.iconFechar{
+  cursor: pointer;
+  width: 25px;
+  position: absolute;
+  right: 0px;
+  top: -40px;
+}
+
+.margemFormularioRejeicao{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.textareaFormularioRejeicao, .btnRecusarSolicitacao{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.textareaFormularioRejeicao{
+  font-weight: initial;
+  padding: 12.5px;
+  min-height: 150px;
+}

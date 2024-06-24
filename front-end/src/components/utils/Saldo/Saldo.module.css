@@ -1,0 +1,31 @@
+.saldo{
+  background: #4e5b74;
+  padding:  0 0 0 5px;
+  height: 32.5px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.textoSaldo{
+  margin: 0 10px 0 5px;
+}
+
+.depositar{
+  font-weight: bold;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27.5px;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  background: var(--botoes);
+  border-radius: 0 5px 5px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.depositar:hover{
+  background-color: var(--botoes-hover);
+}

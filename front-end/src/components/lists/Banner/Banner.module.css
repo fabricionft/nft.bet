@@ -1,0 +1,21 @@
+.propaganda{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px 0;
+}
+
+.banner{
+  width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagemBanner{
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 500px){
+  .banner{width: 100%;}
+}

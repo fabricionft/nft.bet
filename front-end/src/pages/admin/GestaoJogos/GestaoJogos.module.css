@@ -1,0 +1,51 @@
+.linhaPrincipal, .linha{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.impar{background: #22262c;}
+.par{background: #2e343f;}
+
+.coluna1, .coluna2, .coluna3, .coluna4{
+  width: 20%;
+  display: flex;
+  height: 100%;
+}
+
+.coluna2{width: 25%;}
+.coluna3{width: 30%;}
+.coluna4{width: 25%;}
+
+.coluna4{justify-content: space-evenly;}
+
+.tituloLinha, .textoLinha{
+  margin: 10px 10px 10px 12.5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tituloLinha{
+  font-weight: bold;
+  text-shadow: 0 0 25px rgb(255, 255, 255), 0 0 18px rgb(255, 255, 255);
+}
+
+.btnExcluir{
+  width: 42.5%;
+  height: 32.5px;
+  margin: 10px 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(233, 61, 61);
+}
+
+.btnExcluir:hover{background-color: rgb(202, 53, 53);}
+
+@media screen and (max-width: 550px){
+  .btnCriar, .inputFiltro{
+    width: 45%;
+  }
+
+  .linhaPrincipal{display: none;}
+
+  .coluna2, .coluna3, .coluna4, .coluna5{width: 100%;}
+}

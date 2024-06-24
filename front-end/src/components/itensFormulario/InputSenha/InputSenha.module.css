@@ -1,0 +1,13 @@
+.linha{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.linha img{
+  position: absolute;
+  width: 20px;
+  right: 10px;
+  transform: translateY(50%);
+  cursor: pointer;
+}

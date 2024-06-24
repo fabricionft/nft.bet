@@ -1,0 +1,344 @@
+.headerPerfil{
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.spanAlterarAba{
+  cursor: pointer;
+  position: relative;
+  font-size: 12.5px;
+}
+
+.selecionado::after{
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: " ";
+  width: 105%;
+  height: 3px;
+  transition: 1s ease-in-out;
+  background-color: #fff;
+}
+
+.containerPerfil{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.divisaoDadosPessoais, .divisaoDadosSaldo{width: 55%;}
+.divisaoDadosSaldo{width: 40%;}
+
+.dadosPessoais, .vip, .saldo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--elementos);
+  border-radius: 7.5px;
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.vip{
+  margin-top: 20px;
+}
+
+.margemVip, .margemSaldo, .margemDadosPessoais{
+  position: relative;
+  width: 87.5%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+/*dadis pessoais*/
+.subtitulo, .texto{
+  width: 100%;
+  margin: 0;
+  font-size: 15px;
+  color: var(--botoes);
+}
+
+.id{
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 10px;
+  margin: 0;
+}
+
+.iconCopiar{
+  cursor: pointer;
+  margin-left: 7.5px;
+  width: 15px;
+}
+
+.subtitulo{
+  margin-bottom: 3px;
+}
+
+.texto{
+  color: #fff;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.chaves{
+  background-color: #4e5b74;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5px 0 15px 0;
+}
+
+.chave{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.btnAlterarSenha, .btnAdcionarChave{
+  width: 40%;
+  margin-top: 15px;
+}
+
+.btnAdcionarChave{
+  width: calc(60% - 15px);
+  margin-left: 15px;
+}
+
+/*VIP*/
+.nivelVip{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.tituloSetor{
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  color: var(--botoes);
+  font-size: 18px;
+}
+
+.textoSaldo{
+  font-size: 17.5px;
+  margin: 5px 0;
+}
+
+.auditoria{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.iconInfo{
+  width: 17.5px;
+  height: 17.5px;
+  margin-right: 5px;
+}
+
+.linhaVip{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.nivel{
+  padding: 1.5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e5b74;
+  border-radius: 25%;
+  font-size: 18.5px;
+  margin-right: 20px;
+  border: 4px solid var(--botoes);
+}
+
+.linhaProgresso{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
+
+.progressoNivel{
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.progressoNivel::-webkit-progress-value {
+  background-color: var(--botoes);
+  border-radius: 5px 0 0 5px;
+  }
+
+.progressoNivel[value]::-webkit-progress-bar {
+  background: #4e5b74;
+  border-radius: 5px;
+}
+
+.progresso{
+  display: flex;
+  margin: 0;
+  font-size: 12px;
+  position: absolute;
+  top: 25%;
+}
+
+.xp{
+  margin: 0;
+  color: var(--botoes);
+}
+
+/*Historico depositos*/
+.historicoDepositos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--elementos);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+  border-radius: 7.5px;
+}
+
+.margemHistoricoDepositos{
+  width: 90%;
+  margin: 30px 0;
+}
+
+.linha{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12.5px;
+}
+
+.linha:nth-child(1){margin-top: 0;}
+
+.coluna{
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.subtituloHistoricoDepositos{color: var(--botoes); margin: 0; }
+.textoHistoricoDepositos{font-size: 12.5px; margin: 0;}
+
+.solicitado{color: rgb(255, 255, 151);}
+
+.btnDetalhes{width: 100%; height: 35px; font-size: 12.5px;}
+
+.aviso{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 12.5px;
+}
+
+/*Convidar*/
+.convidar{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--elementos);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+  border-radius: 7.5px;
+  margin: 0 auto;
+}
+
+.margemConvidar{
+  width: 90%;
+  margin: 20px 0;
+}
+
+.linhaConvite{
+  width: 100%;
+  margin: 20px 0 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #4e5b74;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.textoConvidar{
+  margin: 0 0 0 10px;
+  font-size: 13.5px;
+}
+
+.btnCopiar{
+  width: 20%;
+  height: 100%;
+  background-color: var(--botoes);
+  border-radius: 0 5px 5px 0;
+}
+
+.descricaoConvidar{
+  display: flex;
+  align-items: center;
+}
+
+.textoDescricaoConvidar{
+  margin: 0 0 0 10px;
+  font-size: 12px;
+}
+
+.statusConvidar{
+  width: 100%;
+  margin-top: 30px;
+}
+
+.linhaStatus{
+  display: flex;
+  font-size: 14px;
+  color: var(--botoes);
+  margin: 0;
+}
+
+.linhaStatus:nth-child(1){margin-bottom: 7.5px;}
+
+.textoStatusConvidar{
+  margin: 0;
+  color: #fff;
+  margin-left: 5px;
+}
+
+
+@media screen and (max-width: 1000px){
+  .containerPerfil, .headerPerfil{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .divisaoDadosPessoais, .divisaoDadosSaldo, .convidar{
+    width: 100%;
+  }
+
+  .headerPerfil{margin-top: 0;}
+
+  .saldo{margin-top: 20px;}
+
+  .btnAlterarSenha, .btnAdcionarChave{width: 100%;}
+
+  .btnAdcionarChave{margin: 20px 0 0 0;}
+}

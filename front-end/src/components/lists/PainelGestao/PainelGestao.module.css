@@ -1,0 +1,39 @@
+.headerJogos{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputFiltro, .inputData{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: initial;
+  width: 200px;
+  margin: 25px 0;
+}
+
+.selectOrdem{
+  width: 20%;
+  margin-right: auto;
+}
+
+.painelGestao{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--elementos);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+  border-radius: 7.5px;
+}
+
+.margemPainelJogos{
+  width: 92.5%;
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 550px){
+  .inputFiltro, .inputData{width: 100%;}
+  .selectOrdem{width: 40%; margin-bottom:  25px;}
+}

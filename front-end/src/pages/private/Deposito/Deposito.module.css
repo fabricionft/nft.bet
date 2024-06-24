@@ -1,0 +1,40 @@
+.deposito{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--elementos);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.margemDeposito{
+  width: 87.5%;
+  margin: 30px 0;
+}
+
+.tituloDeposito{
+  margin: 0 0 20px 0;
+  font-size: 25px;
+}
+
+.inputSeletorValor, .btnConcluirTransacao{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btnConcluirTransacao{margin-top: 40px;}
+
+.inputSeletorValor{
+  width: calc(100% - 10px);
+  background-color: #4e5b74;
+}
+
+@media screen and (max-width: 1250px) {
+  .deposito{width: 80%;}
+}
+
+
+@media screen and (max-width: 800px) {
+  .deposito{width: 100%;}
+}

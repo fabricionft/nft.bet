@@ -1,0 +1,158 @@
+.containerMines{
+  display: flex;
+  flex-direction: column;
+}
+
+.botoesSuperior, .botoesInferior{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoesInferior{
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+.seletorMinas{
+  width: 80px;
+  background-color: var(--botoes);
+}
+
+.containerTelas{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Tela mines*/
+.telaMines{
+  width: 475px;
+  height: 475px;
+  margin: 20px 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mine{
+  background: rgb(29, 134, 255);
+  width: 18%;
+  height: 16.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 35%), 0 8px 16px rgb(0 0 0 / 35%);
+  border: 6px solid rgb(0, 85, 182);
+}
+
+.mine:hover{background-color: rgb(0, 103, 220);}
+
+.errou{background-color: rgb(253, 133, 133);}
+.errou:hover{background-color: rgb(255, 159, 159);}
+
+.iconMine{width: 55%;}
+
+
+/*Tela valores*/
+.telaValores{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  border-radius: 7.5px;
+  background-color: rgb(29, 134, 255);
+  border: 6px solid rgb(0, 85, 182);
+}
+
+.margemTelaValores{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.infoValores{
+  margin-top: 15px;
+}
+
+.infoValores:nth-child(1){margin-top: 0;}
+
+.subtituloValores, .textoValores{
+  font-size: 12px;
+  margin: 0 0 3px 0;
+}
+
+.textoValores{
+  margin: 0 0 0 0;
+  color: rgb(233, 233, 233);
+}
+
+
+/*Botoes inferior*/
+.btnJogar{
+  font-size: 12px;
+  width: 125px;
+}
+
+.desativado{
+  cursor : initial;
+  background-color: var(--botoes-desativado);
+  color: rgb(210, 204, 204);
+}
+
+.btnsAlterarValor{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.btnsAlterarValor button{width: 40px; font-size: 20px;}
+.btnsAlterarValor button:nth-child(1){margin-right: 10px;}
+
+.inputBet{width: 100px;}
+
+
+@media screen and (max-width: 1000px){
+  .telaMines{
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 615px){
+  .containerMines{
+    width: 95%;
+  }
+
+  .containerTelas{
+    flex-direction: column;
+  }
+
+  .telaValores, .telaMines, .botoesInferior{width: 100%;}
+
+  .telaMines{margin: 20px 0 0 0}
+  .telaValores{width: calc(100% - 12px);}
+
+  .margemTelaValores, .botoesInferior{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .margemTelaValores{
+    width: 85%;
+    margin: 12.6px 0
+  }
+
+  .infoValores{margin: 0}
+
+  .btnJogar, .inputBet{width: 30%;}
+}
+
+@media screen and (max-width: 400px){
+  .iconMine{width: 70%;}
+}

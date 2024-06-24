@@ -1,0 +1,47 @@
+.card{
+  width: 10.3%;
+  margin: 0 0 20px 2.5%;
+  cursor: pointer;
+}
+
+.card:hover{
+  filter: brightness(80%);
+}
+
+.card:nth-child(8n+1){margin-left: 0;}
+
+.imagemJogo{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tituloJogo{
+  font-size: 12px;
+  text-align: center;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px){
+  .card, .card:nth-child(6n), .card:nth-child(9n){width: 18%; margin-left: 2.5%;}
+
+  .card:nth-child(5n+1){margin-left: 0;}
+}
+
+@media screen and (max-width: 800px){
+  .card, .card:nth-child(6n), .card:nth-child(9n){width: 23%; margin-left: 2.5%;}
+
+  .card:nth-child(4n+1){margin-left: 0;}
+}
+
+@media screen and (max-width: 550px){
+  .card, .card:nth-child(5n), .card:nth-child(6n), .card:nth-child(9n){width: 31%; margin-left: 3%;}
+
+  .card:nth-child(3n+1){margin-left: 0;}
+}
+
+@media screen and (max-width: 300px){
+  .card, .card:nth-child(4n), .card:nth-child(5n), .card:nth-child(6n), .card:nth-child(9n){width: 48%; margin-left: 0;}
+}

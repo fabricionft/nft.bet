@@ -1,0 +1,30 @@
+.footer{
+  background-color: var(--elementos);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075), 0 8px 16px rgb(0 0 0 / 7.5%);
+}
+
+.icons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.iconFooter{
+  width: 35px;
+  margin: 30px 5px 25px 5px;
+}
+
+.iconFooter:hover{
+  filter: brightness(80%);
+}
+
+.textoFooter{
+  text-align: center;
+  font-size: 10px;
+  margin: 0 30px 50px 30px;
+}

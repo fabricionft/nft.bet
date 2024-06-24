@@ -1,0 +1,28 @@
+.containerPaginacao{
+  width: 119px;
+  height: 35px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--inputs);
+  padding: 7.5px 5px;
+  border-radius: 10px;
+}
+
+.botaoPaginacao{
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.indicePaginacao{
+  margin: 0 20px;
+  text-shadow: 0 0 25px rgb(0, 0, 0), 0 0 18px rgb(25, 25, 25);
+}
+
+.margemEsquerda{margin-left: auto;}
+
+.ambasMargens{margin: 0 auto;}

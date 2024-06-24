@@ -1,0 +1,81 @@
+.containerDetalhes{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.iconFechar{
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+  cursor: pointer;
+}
+
+.detalhes{
+  position: relative;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--formularios);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.margemDetalhes{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.solicitacao{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.divisor{
+  margin-top: 12.5px;
+  margin-right: 20px;
+  width: fit-content;
+}
+
+.tituloDetalhes{
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  font-size: 15px;
+}
+
+.subtituloDetalhes, .textoDetalhes{
+  font-size: 12.5px;
+  margin: 0;
+}
+
+.subtituloDetalhes{color: var(--botoes); margin: 15px 0 4px 0;}
+
+.solicitado{color: rgb(244, 244, 59);}
+.concluido{color: rgb(0, 214, 135);}
+.recusado{color: rgb(248, 66, 66);}
+
+@media screen and (max-width: 1000px) {
+  .detalhes{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .divisor, .destinatario .divisor{width: 100%}
+
+  .tituloDetalhes{justify-content: center;}
+}

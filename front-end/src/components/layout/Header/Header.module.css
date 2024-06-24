@@ -1,0 +1,63 @@
+.header{
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  background: var(--elementos);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075), 0 8px 16px rgb(0 0 0 / 7.5%);
+}
+
+.iconMenu{
+  height: 32.5px;
+  width: 32.5px;
+  cursor: pointer;
+  filter: brightness(95%);
+  margin-right: 20px;
+}
+
+.margemHeader{
+  width: 92.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.sessao{
+  display: flex;
+  align-items: center;
+}
+
+.btnSessao{
+  background-color: var(--botoes);
+  width: fit-content;
+  padding: 0 7.5px;
+  height: 35px;
+  margin-left: 15px;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btnSessao:hover{
+  filter: brightness(85%);
+}
+
+.btnSessao:nth-child(1){
+  color: var(--elementos);
+}
+
+.logo{width: 100%;}
+
+.linkLogo{
+  width: 140px;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 550px){
+  .linkLogo{width: 25%;}
+  .margemHeader{width: 90%;}
+}

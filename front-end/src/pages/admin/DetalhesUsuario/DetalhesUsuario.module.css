@@ -1,0 +1,105 @@
+.detalhesUsuario{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: var(--elementos);
+  border-radius: 7.5px;
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.margemDetalhesUsuario{
+  width: 92.5%;
+  margin: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.divisor{
+  width: 20%;
+  margin: 0 20px 30px 0;
+}
+
+.subtituloDetalhesUsuario, .textoDetalhesUsuario{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.subtituloDetalhesUsuario{
+  font-weight: bold;
+  color: var(--botoes);
+  margin-bottom: 5px;
+}
+
+.iconCopiar{
+  width: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.divisorBtns{
+  width: 100%;
+  margin: 10px 0 40px;
+}
+
+.divisorHistorico{
+  width: 36%;
+}
+.menor{width: 20%;}
+
+.tituloHistorico{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  text-shadow: 0 0 25px #fff, 0 0 18px #fff;
+}
+
+.linhaChave, .linhaTransacao{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--inputs);
+}
+
+.par{background-color: var(--inputs);}
+.impar{background-color: #2e343f;;}
+
+.coluna1, .coluan2, .coluna3{
+  width: 30%;
+}
+
+.textoHistorico{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.btnAlterarStatus{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+
+@media screen and (max-width: 1100px) {
+  .divisor{
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .divisorBtns{margin-bottom: 10px;}
+
+  .divisorHistorico{
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .divisor{
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}

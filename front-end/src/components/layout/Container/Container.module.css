@@ -1,0 +1,35 @@
+.container{
+  min-height: 92.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.admin{
+  height: 100vh;
+}
+
+.centralizar{
+  align-items: center;
+}
+
+.margemContainer{
+  width: 92.5%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home{margin: 40px 0 0 0;}
+
+.aninharHorizontalmente{
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 450px){
+  .container{
+    min-height: 85vh;
+  }
+}

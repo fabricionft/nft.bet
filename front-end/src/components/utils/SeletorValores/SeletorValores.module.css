@@ -1,0 +1,42 @@
+.seletoresValores{
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: left;
+}
+
+.seletorValor{
+  width: 23%;
+  height: 40px;
+  border-radius: 7.5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e5b74;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.seletorValor:hover{background-color: var(--botoes);}
+
+.seletorValor{
+  margin-left: 2.65%;
+}
+
+.seletorValor:nth-child(4n + 1){margin-left: 0;}
+
+.selecionado{background-color: var(--botoes)}
+
+
+@media screen and (max-width: 500px) {
+  .seletorValor, .seletorValor:nth-child(5n){width: 31.6%; margin-left: 2.5%;}
+
+  .seletorValor:nth-child(3n + 1){margin-left: 0;}
+}
+
+@media screen and (max-width: 350px) {
+  .seletoresValores{justify-content: space-between;}
+
+  .seletorValor, .seletorValor:nth-child(5n){width: 48%; margin-left: 0;}
+}

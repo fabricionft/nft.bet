@@ -1,0 +1,20 @@
+.cabecalho{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textoRodapeFormularioCadastro{
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.textoRodapeFormularioCadastro:hover{
+  color: var(--botoes);
+}

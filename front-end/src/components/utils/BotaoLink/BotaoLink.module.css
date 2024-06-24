@@ -1,0 +1,51 @@
+.botaoLink{
+  height: 40px;
+  font-size: 13px;
+  padding: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: var(--botoes);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+}
+
+.botaoLink:hover{
+  background-color: var(--botoes-hover);
+}
+
+.criar, .editar, .detalhes{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+.criar{
+  margin: 25px 0;
+  width: 150px;
+}
+
+.editar{
+  width: 42.5%;
+  height: 32.5px;
+  margin: 10px 0;
+}
+
+.detalhes{
+  width: 80%;
+  height: 32.5px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 550px){
+  .criar{width: 25%; margin:  0 auto 25px 0;}
+
+  .btnDetalhes{
+    width: 100%;
+    margin: 10px 12.5px 20px 12.5px;
+  }
+
+  .detalhes{
+    width: 85%;
+  }
+}

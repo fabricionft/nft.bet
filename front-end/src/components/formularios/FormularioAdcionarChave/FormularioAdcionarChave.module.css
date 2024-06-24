@@ -1,0 +1,34 @@
+.formularioAdcionarChave{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: var(--formularios);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.textoCabecalhoFormularioAdcionarChave{
+  width: 100%;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.iconFechar{
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+.margemFormularioAdcionarChave{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 425px){
+  .formularioAdcionarChave{
+    width: 90%;
+  }
+}

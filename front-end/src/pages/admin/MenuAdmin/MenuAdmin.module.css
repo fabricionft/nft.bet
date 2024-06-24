@@ -1,0 +1,64 @@
+.containerOpcoes{
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.funcao{
+  width: 31%;
+  margin: 0 0 30px 3.5%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--elementos);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+  border-radius: 7.5px;
+  text-decoration: none;
+}
+
+.funcao:hover{filter: brightness(80%);}
+
+.funcao:nth-child(3N + 1){margin-left: 0;}
+
+.margemFuncao{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tituloFuncao, .descFuncao{
+  margin: 0;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tituloFuncao{font-weight: bold}
+
+.descFuncao{font-size: 15px;}
+
+@media screen and (max-width: 800px){
+  .containerOpcoes{
+    justify-content: space-between;
+  }
+
+  .funcao, .funcao:nth-child(3n + 1){
+    width: 48%;
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  .funcao, .funcao:nth-child(3n + 1){
+    width: 100%;
+  }
+}

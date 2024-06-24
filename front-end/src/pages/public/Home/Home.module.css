@@ -1,0 +1,55 @@
+.banner{
+  width: 450px;
+  border-radius: 10px;
+}
+
+.propaganda, .jogosDaCasa{
+  width: 100%;
+  display: flex;
+  margin: 0 0 20px 0;
+  color: #fff;
+}
+
+.propaganda{
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.jogosDaCasa{
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.headerSection{
+  width: 100%;
+  margin: 0 0 17.5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.inputPesquisa{
+  width: 150px;
+}
+
+.tituloSecao{
+  font-weight: bold;
+  color: #fff;
+  margin:0;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width: 800px){
+  .headerSection{justify-content: space-between;}
+}
+
+@media screen and (max-width: 500px){
+  .headerSection{justify-content: space-between;}
+  .banner{width: 100%;}
+}
+
+@media screen and (max-width: 300px){
+  .jogosDaCasa{justify-content: space-between;}
+}

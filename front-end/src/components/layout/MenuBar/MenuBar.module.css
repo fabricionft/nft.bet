@@ -1,0 +1,103 @@
+.input{display: none;}
+
+.input:checked~.esconder{
+  transform: translateX(100%);
+}
+
+.input:checked~.menuBar{
+  transform: translateX(100%);
+}
+
+.esconder{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: -100%;
+  z-index: 2;
+}
+
+.menuBar{
+  width: 20%;
+  height: 100%;
+  left: -20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: var(--elementos);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.sessao{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 12.5%;
+}
+
+.textoSessao, .textoLinkSessao{
+  color: #b8b5b5;
+  text-decoration: none;
+  margin: 4px 5px 0 5px;
+}
+
+.textoLinkSessao{
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.textoLinkSessao:hover{
+  color: var(--botoes);
+}
+
+.botoesMenuBar{
+  height: 82.5%;
+  width: 80%;
+}
+
+.botao{
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.icon{
+  width: 20px;
+  filter: brightness(60%);
+}
+
+.textoBotao{
+  margin: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b8b5b5;
+}
+
+.botao:hover{
+  .textoBotao{color: #fff;}
+  .icon{
+    filter: brightness(500%)
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menuBar{
+    width: 50%;
+    left: -50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menuBar{
+    width: 70%;
+    left: -70%;
+  }
+}

@@ -1,0 +1,17 @@
+.headerAdmin{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--elementos);
+  box-shadow: 0 4px 8px var(--sombra), 0 8px 16px var(--sombra);
+}
+
+.margemHeaderAdmin{
+  width: 92.5%;
+  margin: 20px 0;
+}
+
+.iconHeaderAdimin{
+  width: 30px;
+  cursor: pointer;
+}
